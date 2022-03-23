@@ -1,0 +1,17 @@
+{
+  "name": "barebones-web-app",
+  "version": "1.0.0",
+  "description": "A simple web app",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js __STATIC_FILE_DIR__=\"..\\frontend\\build\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jason Zissman",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "barebones-web-app": "file:..",
+    "express": "^4.17.3"
+  }
+}

@@ -2,15 +2,15 @@
   "name": "barebones-web-app",
   "version": "1.0.0",
   "description": "A simple web app",
-  "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "frontend:install": "npm install --prefix ./frontend",
+    "frontend:start": "npm run start --prefix ./frontend",
+    "frontend:build": "npm run build --prefix ./frontend",
+    "frontend:test": "npm run test --prefix ./frontend",
+    "backend:install": "npm install --prefix ./backend",
+    "backend:start": "npm run start --prefix ./backend",
+    "backend:test": "npm run test --prefix ./backend"
   },
   "author": "Jason Zissman",
-  "license": "ISC",
-  "type": "module",
-  "dependencies": {
-    "express": "^4.17.3"
-  }
+  "license": "ISC"
 }
